@@ -1,58 +1,90 @@
-//DOM ATTRIBUTES PROPERIES
+// //DOM ATTRIBUTES PROPERIES
+// // Create element
+// const li = document.createElement("li");
+
+// // Add class
+// li.className = "collection-item";
+
+// // Add id
+// li.id = "new-item";
+
+// // Add attribute
+// li.setAttribute("title", "New Item");
+
+// // Create text node and append
+// li.appendChild(document.createTextNode("Hello World"));
+
+// // Create new link element
+// const link = document.createElement("a");
+// // Add classes
+// link.className = "delete-item secondary-content";
+// // Add icon html
+// link.innerHTML = '<i class="fa fa-remove"></i>';
+
+// // Append link into li
+// li.appendChild(link);
+
+// // Append li as child to ul
+// document.querySelector("ul.collection").appendChild(li);
+
+// console.log(li);
+
+// REPLACE ELEMENT
+
+// // Create Element
+// const newHeading = document.createElement("h2");
+// // Add id
+// newHeading.id = "task-title";
+// // New text node
+// newHeading.appendChild(document.createTextNode("Task List"));
+
+// // Get the old heading
+// const oldHeading = document.getElementById("task-title");
+// //Parent
+// const cardAction = document.querySelector(".card-action");
+
+// // Replace
+// cardAction.replaceChild(newHeading, oldHeading);
+
+// // REMOVE ELEMENT
+// const lis = document.querySelectorAll("li");
+// const list = document.querySelector("ul");
+
+// // Remove list item
+// lis[0].remove();
+
+// // Remove child element
+// list.removeChild(lis[3]);
+
+// // CLASSES & ATTR
+// const firstLi = document.querySelector("li:first-child");
+// const link = firstLi.children[0];
+
+// let val;
+
+// // Classes
+// val = link.className;
+// val = link.classList;
+// val = link.classList[0];
+// link.classList.add("test");
+// link.classList.remove("test");
+// val = link;
+
+// // Attributes
+// val = link.getAttribute("href");
+// val = link.setAttribute("href", "http://google.com");
+// link.setAttribute("title", "Google");
+// val = link.hasAttribute("title");
+// link.removeAttribute("title");
+// val = link;
+
+// console.log(val);
 
 //(1) setAttribute;
 
-let x = document.querySelectorAll(".container1-wrapper");
+let x = document.querySelectorAll(".container-wrapper");
 x[0].style.fontFamily = "arial";
 x[0].style.textAlign = "center";
 function myFunction() {
   document.getElementsByTagName("h2")[0].setAttribute("class", "democlass");
 }
-// function myFunction() {
-//   document.getElementsByTagName("INPUT")[0].setAttribute("type", "button");
-// }
-
-// let input = document.querySelector("input");
-
-// input.setAttribute("id", "id");
-// alert(input.id);
-
-//(2) getAttribute;
-
-// function myFunction() {
-//   var x = document.getElementsByTagName("h3")[0].getAttribute("id");
-//   document.getElementById("demo").innerHTML = x;
-// }
-
-// function myFunction() {
-//   var x = document.getElementById("myBtn").getAttribute("onclick");
-//   document.getElementById("demo").innerHTML = x;
-// }
-
-// let input = document.querySelector("input");
-// input.id = "newId";
-// console.log(input.getAttribute("id"));
-
-// let input = document.querySelectorAll("input");
-
-// input.setAttribute("value", "text");
-// alert(input.value);
-
-// input.value = "newValue";
-// alert(input.getAttribute("value"));
-
-//hasAttribute
-
-// let x;
-// x = input[1].hasAttribute("type");
-// console.log(x);
-
-// x = input[0].hasAttribute("type");
-// console.log(x);
-
-//removeAttribute
-
-// input[0].removeAttribute("value");
-// console.log(input);
-// input[1].removeAttribute("name");
-// console.log(input[1]);
