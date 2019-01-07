@@ -82,9 +82,9 @@ console.log(li);
 
 //(1) setAttribute;
 
-let x = document.querySelectorAll(".container-wrapper");
-x[0].style.fontFamily = "arial";
-x[0].style.textAlign = "center";
-function myFunction() {
-  document.getElementsByTagName("h2")[0].setAttribute("class", "democlass");
-}
+// let x = document.querySelectorAll(".container-wrapper");
+// x[0].style.fontFamily = "arial";
+// x[0].style.textAlign = "center";
+// function myFunction() {
+//   document.getElementsByTagName("h2")[0].setAttribute("class", "democlass");
+// }
