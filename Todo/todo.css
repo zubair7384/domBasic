@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #fff;
+  font-size: 18px;
+  transition: 0.2s;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid rgba(102, 98, 98, 0.651);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+}
+li:hover {
+  background: rgba(228, 223, 223, 0.719);
+  transition: 0.5s;
+}
+li > h2:hover {
+  color: red;
+}
+li > h2 {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  padding-right: 2rem;
+}
+li > p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  background-color: black;
+  padding: 30px 40px;
+  color: white;
+  font-weight: 100;
+  font-size: 1.5em;
+  text-align: center;
+}
+.header > h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: rgb(44, 42, 42);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.btn {
+  background: black;
+  color: #fff;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  text-align: center;
+  width: 30%;
+  cursor: pointer;
+}
