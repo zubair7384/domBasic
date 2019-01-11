@@ -16,7 +16,7 @@ function addtask() {
     ul.appendChild(li);
     li.appendChild(del);
     del.textContent = "X";
-    console.log(li);
+    // console.log(li);
     input.value = "";
   }
 }
