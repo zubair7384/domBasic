@@ -1,9 +1,9 @@
 function addtask() {
   let ul, input, li, text, del;
   ul = document.getElementById("myul");
+  input = document.getElementById("input");
   li = document.createElement("li");
   li.className = "item";
-  input = document.getElementById("input");
   text = document.createElement("p");
   del = document.createElement("h2");
   del.className = "delete-item items";
@@ -16,10 +16,22 @@ function addtask() {
     ul.appendChild(li);
     li.appendChild(del);
     del.textContent = "X";
-    // console.log(li);
+    storeTaskInLocalStorage(input.value);
     input.value = "";
   }
 }
+function storeTaskInLocalStorage(task) {
+  let tasks;
+  if (localStorage.getItem("tasks") === null) {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem("tasks"));
+  }
+  tasks.push(task);
+
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
 document.body.addEventListener("click", removeList);
 function removeList(e) {
   if (e.target.classList.contains("items")) {

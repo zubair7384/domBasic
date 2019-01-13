@@ -30,7 +30,7 @@ li:hover {
   transition: 0.5s;
 }
 li > h2:hover {
-  color: red;
+  color: rgb(255, 0, 13);
 }
 li > h2 {
   text-decoration: none;
@@ -117,4 +117,8 @@ input {
   text-align: center;
   width: 30%;
   cursor: pointer;
+}
+.btn:hover {
+  background: rgb(255, 0, 13);
+  transition: 0.8s;
 }
