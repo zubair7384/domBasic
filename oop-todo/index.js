@@ -22,8 +22,8 @@ function addtask() {
     li.appendChild(del);
     del.textContent = "X";
     storeTaskInLocalStorage(input.value);
-    input.value = "";
   }
+  input.value = "";
 }
 
 TODO.prototype.clearItems = document.body.addEventListener("click", removeAll);
