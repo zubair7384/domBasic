@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Cars World</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Cars World</h1>
+      <div class="container-wrapper">
+        <form id="car-form" class="form">
+          <div class="car-input">
+            <label for="name">Name</label> <input type="text" id="name" />
+          </div>
+          <div class="car-input">
+            <label for="make">Make</label><input type="text" id="make" />
+          </div>
+          <div class="car-input">
+            <label for="model">Model</label><input type="text" id="model" />
+          </div>
+          <div class="car-input">
+            <label for="price">Price</label> <input type="text" id="price" />
+          </div>
+          <div class="car-input">
+            <label for="year">Year</label> <input type="text" id="year" />
+          </div>
+          <div class="car-input">
+            <label for="description">Description</label>
+            <input type="text" id="description" />
+          </div>
+          <div class="btn car-input">
+            <input style="cursor:pointer;" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Make</th>
+          <th>Model</th>
+          <th>Price</th>
+          <th>Year</th>
+          <th>Description</th>
+          <th>Remove</th>
+        </tr>
+
+        <tbody id="car-list"></tbody>
+      </table>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
