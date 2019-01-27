@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>GitHub Finder</title>
+  </head>
+  <body>
+    <style>
+      .navbar {
+        background: rgb(145, 20, 58);
+        text-align: center;
+        padding: 0.9rem;
+        font-size: 1.5rem;
+      }
+      .navbar-brand {
+        color: #fff;
+      }
+      .search-card {
+        padding: 2rem;
+        text-align: center;
+      }
+      .form-control {
+        margin: 0 4rem;
+      }
+      .btn {
+        padding: 0 7.1rem;
+        margin-top: 1rem;
+      }
+      .card {
+        width: 20%;
+        margin: 0 2rem;
+      }
+      .heading,
+      .list {
+        margin: 0 2rem;
+      }
+    </style>
+    <header class="navbar">
+      <div class="container">
+        <a href="#" class="navbar-brand">GitHub SEARCH</a>
+      </div>
+    </header>
+
+    <div class="container-search">
+      <div class="search-card">
+        <h4>Search GitHub Users</h4>
+        <div class="form-area">
+          <input
+            type="text"
+            id="search-user"
+            class="form-control"
+            placeholder="Enter Username..."
+          />
+        </div>
+      </div>
+      <br />
+      <div id="profile"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
